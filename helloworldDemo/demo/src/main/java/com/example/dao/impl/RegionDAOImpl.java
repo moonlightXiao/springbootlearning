@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.example.dao.RegionDAO;
 import com.example.pojo.Region;
 
-@Repository
+@Repository //标注了 @Repository 的类都将被注册为 Spring Bean
 public class RegionDAOImpl implements RegionDAO{
 
 	@Autowired
@@ -37,5 +37,4 @@ public class RegionDAOImpl implements RegionDAO{
 			}
 		});
 	}
-
 }
